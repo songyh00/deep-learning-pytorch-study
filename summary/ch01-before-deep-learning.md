@@ -207,7 +207,7 @@ EDA에서는 다음과 같은 요소를 점검한다.
 └─ 테스트용 데이터
 ```
 
-<img width="346" height="175" alt="전체 데이터를 훈련, 검증, 테스트 데이터로 나누는 그림" src="./train_validation_test_split.png" />
+<img width="346" height="175" alt="Image" src="https://github.com/user-attachments/assets/2861fa08-2950-41e7-87b0-9902c4a80b3f" />
 
 <details>
 <summary>과적합이란?</summary>
