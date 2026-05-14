@@ -14,7 +14,7 @@
 딥 러닝(Deep Learning)도 머신 러닝의 한 갈래이므로, 딥 러닝 워크플로우도 머신 러닝 워크플로우로 볼 수 있다.
 
 <details>
-<summary>머신 러닝과 딥 러닝</summary>
+<summary>머신 러닝과 딥 러닝의 관계</summary>
 
 머신 러닝: 컴퓨터가 데이터를 통해 규칙이나 패턴을 학습하고, 이를 바탕으로 예측이나 분류 같은 작업을 수행하도록 하는 방법  
 딥 러닝: 인공 신경망을 여러 층으로 깊게 쌓아 복잡한 패턴을 학습하는 방법
@@ -115,7 +115,7 @@ EDA에서는 다음과 같은 요소를 점검한다.
 이 과정에서 시각화와 간단한 통계 테스트를 진행하기도 한다.
 
 <details>
-<summary>독립 변수와 종속 변수란?</summary>
+<summary>독립 변수와 종속 변수</summary>
 
 독립 변수: 결과에 영향을 주는 입력에 해당하는 변수  
 종속 변수: 독립 변수의 영향을 받아 결정되는 결과에 해당하는 변수
@@ -210,7 +210,7 @@ EDA에서는 다음과 같은 요소를 점검한다.
 <img width="346" height="175" alt="Image" src="https://github.com/user-attachments/assets/2861fa08-2950-41e7-87b0-9902c4a80b3f" />
 
 <details>
-<summary>과적합이란?</summary>
+<summary>과적합의 의미</summary>
 
 과적합은 모델이 훈련용 데이터에 지나치게 맞춰져서, 새로운 데이터에 대해서는 성능이 떨어지는 상황을 말한다.
 
@@ -308,7 +308,7 @@ Matplotlib = 데이터 시각화
 ```
 
 <details>
-<summary>패키지와 라이브러리란?</summary>
+<summary>패키지와 라이브러리</summary>
 
 패키지나 라이브러리는 특정 기능을 쉽게 사용할 수 있도록 미리 만들어 둔 코드 모음이다.  
 예를 들어 Pandas를 사용하면 표 형태의 데이터를 직접 처음부터 구현하지 않고도 쉽게 다룰 수 있다.
@@ -624,7 +624,7 @@ RangeIndex(start=0, stop=6, step=1)
 ```
 
 <details>
-<summary>CSV 파일이란?</summary>
+<summary>CSV 파일 형식</summary>
 
 CSV는 데이터를 쉼표로 구분해서 저장하는 텍스트 파일 형식이다.  
 표 형태의 데이터를 저장하거나 교환할 때 자주 사용된다.
@@ -746,7 +746,7 @@ print(mat.shape)
 배열의 크기를 정확히 아는 것은 딥 러닝에서 매우 중요하다.
 
 <details>
-<summary>shape가 중요한 이유</summary>
+<summary>shape 확인이 중요한 이유</summary>
 
 딥 러닝에서는 데이터가 보통 벡터나 행렬 형태로 모델에 입력된다.  
 이때 입력 데이터의 크기가 맞지 않으면 연산이 제대로 수행되지 않을 수 있다.
@@ -1049,7 +1049,7 @@ plt.show()
 <img width="344" height="242" alt="Image" src="https://github.com/user-attachments/assets/65d0f8ed-fcf9-4f07-8796-33d21e5b5e3f" />
 
 <details>
-<summary>범례란?</summary>
+<summary>범례의 역할</summary>
 
 범례는 그래프에서 각 선이나 막대가 어떤 데이터를 의미하는지 알려주는 설명이다.  
 여러 데이터를 하나의 그래프에 함께 표시할 때 유용하다.
@@ -1148,7 +1148,7 @@ y = 20,000개의 정답 데이터
 즉, 어떤 `X`에 대한 정답이 어떤 `y`인지 바로 찾을 수 있어야 한다.
 
 <details>
-<summary>X와 y를 구분하는 이유</summary>
+<summary>X와 y를 분리하는 이유</summary>
 
 머신 러닝에서는 모델이 입력 데이터를 보고 정답을 예측하도록 학습한다.  
 그래서 입력 데이터는 `X`, 정답 데이터는 `y`로 분리해서 다루는 경우가 많다.
@@ -1248,7 +1248,7 @@ y 데이터 : (1, 2, 3)
 ```
 
 <details>
-<summary>*sequences의 의미</summary>
+<summary>zip(*sequences)의 의미</summary>
 
 `*sequences`는 리스트 안에 들어 있는 여러 데이터를 각각의 인자로 풀어서 전달한다는 의미이다.
 
@@ -1408,7 +1408,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 `train_size`와 `test_size`는 둘 중 하나만 기재해도 된다.
 
 <details>
-<summary>random_state란?</summary>
+<summary>random_state의 역할</summary>
 
 `random_state`는 데이터를 섞는 방식이 매번 달라지지 않도록 고정하는 값이다.  
 같은 `random_state` 값을 사용하면 실행할 때마다 같은 방식으로 데이터가 섞인다.
