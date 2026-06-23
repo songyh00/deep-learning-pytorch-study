@@ -135,7 +135,7 @@ $$
 로지스틱 회귀에서는 선형식 `Wx + b`를 시그모이드 함수에 넣는다.
 
 $$
-H(x) = \operatorname{sigmoid}(Wx + b)
+H(x) = \sigma(Wx + b)
 $$
 
 또는 다음처럼 쓸 수 있다.
@@ -182,7 +182,7 @@ x가 매우 큼    → sigmoid(x) ≈ 1
 로지스틱 회귀의 가설식은 다음과 같다.
 
 $$
-H(x) = \operatorname{sigmoid}(Wx + b)
+H(x) = \sigma(Wx + b)
 $$
 
 여기서 `W`와 `b`는 모델이 학습을 통해 찾아야 하는 값이다.
@@ -311,7 +311,7 @@ $$
 로지스틱 회귀의 가설식은 다음과 같다.
 
 $$
-H(x) = \operatorname{sigmoid}(Wx + b)
+H(x) = \sigma(Wx + b)
 $$
 
 여기에 MSE를 적용하면 비용 함수의 그래프가 복잡하고 울퉁불퉁한 형태가 될 수 있다.
@@ -615,7 +615,7 @@ b = torch.zeros(1, requires_grad=True)
 로지스틱 회귀의 가설식은 다음과 같다.
 
 $$
-H(x) = \operatorname{sigmoid}(XW + b)
+H(x) = \sigma(XW + b)
 $$
 
 PyTorch 코드로 직접 쓰면 다음과 같다.
@@ -660,7 +660,7 @@ x_train.matmul(W) + b = 0
 따라서 시그모이드에 들어가는 값도 0이다.
 
 $$
-\operatorname{sigmoid}(0) = 0.5
+\sigma(0) = 0.5
 $$
 
 그래서 모든 예측값이 0.5가 나온다.
@@ -846,7 +846,7 @@ bias 1 ── b
 수식으로는 다음과 같다.
 
 $$
-H(x) = \operatorname{sigmoid}(x_1w_1 + x_2w_2 + b)
+H(x) = \sigma(x_1w_1 + x_2w_2 + b)
 $$
 
 여기서 각 의미는 다음과 같다.
@@ -887,7 +887,7 @@ PyTorch에서는 이 부분을 `nn.Linear()`로 구현할 수 있다.
 로지스틱 회귀의 가설식은 다음과 같다.
 
 $$
-H(x) = \operatorname{sigmoid}(Wx + b)
+H(x) = \sigma(Wx + b)
 $$
 
 따라서 PyTorch에서는 다음처럼 구현할 수 있다.
@@ -916,7 +916,7 @@ model = nn.Sequential(
 이 코드는 다음 수식을 구현한 것이다.
 
 $$
-H(x) = \operatorname{sigmoid}(Wx + b)
+H(x) = \sigma(Wx + b)
 $$
 
 각 부분의 의미는 다음과 같다.
@@ -1087,7 +1087,7 @@ b = [-14.4839]
 즉, 학습이 끝난 모델의 식은 대략 다음과 같다.
 
 $$
-H(x) = \operatorname{sigmoid}(3.2534x_1 + 1.5181x_2 - 14.4839)
+H(x) = \sigma(3.2534x_1 + 1.5181x_2 - 14.4839)
 $$
 
 ---
@@ -1191,7 +1191,7 @@ self.sigmoid(...)
 즉, 수식으로는 다음과 같다.
 
 $$
-H(x) = \operatorname{sigmoid}(Wx + b)
+H(x) = \sigma(Wx + b)
 $$
 
 ---
@@ -1295,7 +1295,7 @@ for epoch in range(nb_epochs + 1):
 
 3. 선형 회귀는 출력값에 제한이 없어서 이진 분류에 그대로 쓰기 어렵다.
 
-4. 로지스틱 회귀의 가설식은 $H(x) = \operatorname{sigmoid}(Wx + b)$이다.
+4. 로지스틱 회귀의 가설식은 $H(x) = \sigma(Wx + b)$이다.
 
 5. 시그모이드 함수는 어떤 입력값이 들어와도 0과 1 사이의 값을 출력한다.
 
@@ -1337,7 +1337,7 @@ for epoch in range(nb_epochs + 1):
 
 출력값을 0과 1 사이로 만들기 위해 사용한다.
 $Wx + b$는 범위 제한이 없지만,
-$\operatorname{sigmoid}(Wx + b)$는 0과 1 사이의 값을 출력한다.
+$\sigma(Wx + b)$는 0과 1 사이의 값을 출력한다.
 
 
 ---
